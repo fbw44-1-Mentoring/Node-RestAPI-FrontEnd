@@ -5,7 +5,7 @@ export default function Products() {
     const [products,setProducts]= useState([])
 
     const fetchAllProducts=()=>{
-            fetch("http://localhost:4000/products")
+            fetch("http://localhost:4000/products") //get request
             .then(res=>res.json())
             .then(result=>setProducts(result.products))
     }
